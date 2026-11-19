@@ -307,6 +307,20 @@
       font-size: 1.35rem;
       line-height: 1.1;
     }
+    
+    .airport-terminal {
+      font-size: 0.76rem;
+      font-weight: 700;
+      display: inline-block;
+      padding: 1px 7px;
+      border: 1.8px solid var(--ink);
+      border-radius: 999px;
+      background-color: var(--yamabuki);
+      margin-top: 3px;
+    }
+    .airport-terminal.t2 {
+      background-color: var(--mizu);
+    }
 
     .airport-name {
       font-size: 0.82rem;
@@ -729,6 +743,7 @@
             <div>
               <div class="airport-code">TPE</div>
               <div class="airport-name">桃園機場</div>
+              <div><span class="airport-terminal">第一航廈 T1</span></div>
               <div class="flight-time">10:10</div>
             </div>
             <div style="flex:1;">
@@ -742,6 +757,7 @@
             <div>
               <div class="airport-code">NRT</div>
               <div class="airport-name">成田機場</div>
+              <div><span class="airport-terminal t2">第二航廈 T2</span></div>
               <div class="flight-time">14:20</div>
             </div>
           </div>
@@ -757,6 +773,7 @@
             <div>
               <div class="airport-code">TPE</div>
               <div class="airport-name">桃園機場</div>
+              <div><span class="airport-terminal t2">第二航廈 T2</span></div>
               <div class="flight-time">10:40</div>
             </div>
             <div style="flex:1;">
@@ -770,6 +787,7 @@
             <div>
               <div class="airport-code">NRT</div>
               <div class="airport-name">成田機場</div>
+              <div><span class="airport-terminal t2">第二航廈 T2</span></div>
               <div class="flight-time">14:40</div>
             </div>
           </div>
@@ -789,6 +807,7 @@
             <div>
               <div class="airport-code">NRT</div>
               <div class="airport-name">成田機場</div>
+              <div><span class="airport-terminal t2">第二航廈 T2</span></div>
               <div class="flight-time">15:40</div>
             </div>
             <div style="flex:1;">
@@ -802,6 +821,7 @@
             <div>
               <div class="airport-code">TPE</div>
               <div class="airport-name">桃園機場</div>
+              <div><span class="airport-terminal">第一航廈 T1</span></div>
               <div class="flight-time">18:45</div>
             </div>
           </div>
@@ -817,6 +837,7 @@
             <div>
               <div class="airport-code">NRT</div>
               <div class="airport-name">成田機場</div>
+              <div><span class="airport-terminal t2">第二航廈 T2</span></div>
               <div class="flight-time">18:05</div>
             </div>
             <div style="flex:1;">
@@ -830,6 +851,7 @@
             <div>
               <div class="airport-code">TPE</div>
               <div class="airport-name">桃園機場</div>
+              <div><span class="airport-terminal t2">第二航廈 T2</span></div>              
               <div class="flight-time">21:15</div>
             </div>
           </div>
@@ -845,6 +867,7 @@
             <div>
               <div class="airport-code">NRT</div>
               <div class="airport-name">成田機場</div>
+              <div><span class="airport-terminal t2">第二航廈 T2</span></div>
               <div class="flight-time">20:10</div>
             </div>
             <div style="flex:1;">
@@ -858,6 +881,7 @@
             <div>
               <div class="airport-code">TPE</div>
               <div class="airport-name">桃園機場</div>
+              <div><span class="airport-terminal">第一航廈 T1</span></div>
               <div class="flight-time">23:20</div>
             </div>
           </div>
@@ -928,8 +952,8 @@
             </div>
             <h4 class="tl-title">桃園機場 ➔ 成田機場（分兩航班出發）</h4>
             <ul class="flight-split-list">
-              <li><strong>星宇航空 JX802</strong>：10:10 桃園出發 ➔ 14:20 抵達成田</li>
-              <li><strong>日本航空 JL802</strong>：10:40 桃園出發 ➔ 14:40 抵達成田</li>
+              <li><strong>星宇航空 JX802</strong>：10:10 桃園（第一航廈 T1）➔ 14:20 成田（第二航廈 T2）</li>
+              <li><strong>日本航空 JL802</strong>：10:40 桃園（第二航廈 T2）➔ 14:40 成田（第二航廈 T2）</li>
             </ul>
           </div>
 
@@ -1374,9 +1398,9 @@
             </div>
             <h4 class="tl-title">成田機場 ➔ 桃園機場（分三航班返回台灣）</h4>
             <ul class="flight-split-list">
-              <li><strong>星宇航空 JX803</strong>：15:40 成田起飛 ➔ 18:45 抵達桃園</li>
-              <li><strong>日本航空 JL809</strong>：18:05 成田起飛 ➔ 21:15 抵達桃園</li>
-              <li><strong>星宇航空 JX805</strong>：20:10 成田起飛 ➔ 23:20 抵達桃園</li>
+              <li><strong>星宇航空 JX803</strong>：15:40 成田（第二航廈 T2）➔ 18:45 桃園（第一航廈 T1）</li>
+              <li><strong>日本航空 JL809</strong>：18:05 成田（第二航廈 T2）➔ 21:15 桃園（第二航廈 T2）</li>
+              <li><strong>星宇航空 JX805</strong>：20:10 成田（第二航廈 T2）➔ 23:20 桃園（第一航廈 T1）</li>
             </ul>
           </div>
         </div>
